@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+    font-family: "Cardo", serif;
+}
+:root{
+    --white:#FFFFFF;
+    --almost-white: #F2F1EC;
+    --blue-darker: #2B4451;
+    --blue-normal: #365B6D;
+    --blue-light: #2A769C;
+}
