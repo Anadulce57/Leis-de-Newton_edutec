@@ -41,9 +41,38 @@ nav div a {
 }
 
 header h1 {
+    color: var(--green-darker);
     text-align: left;
     font-family: "Cardo", serif;
     font-weight: 700;
     font-size: 3rem;
     margin-top: 5rem;
+}
+
+main{
+    padding: 7rem;
+}
+
+section{
+    padding: 5rem;
+}
+
+img{
+    width: 10rem;
+    text-align: center;
+}
+
+.hist1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hist2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 2rem;
 }
