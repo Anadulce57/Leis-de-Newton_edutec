@@ -26,8 +26,10 @@ nav {
 
 nav > a{
     margin: 1rem;
-
+    padding-inline: 1rem;
+    padding-block: 0.25rem;
 }
+
 
 nav div a {
     margin: 1rem;
@@ -47,10 +49,15 @@ header h1 {
     font-weight: 700;
     font-size: 3rem;
     margin-top: 5rem;
+    padding-left: 5.5rem;
 }
 
 main{
     padding: 7rem;
+}
+
+main h2{
+    color:var(--blue-darker-active)
 }
 
 section{
@@ -66,7 +73,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .hist2{
@@ -74,5 +81,5 @@ img{
     align-items: center;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
