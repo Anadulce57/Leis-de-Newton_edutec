@@ -4,3 +4,46 @@
     box-sizing: border-box;
     font-family: "Didact Gothic", sans-serif;
 }
+
+:root{
+    --white:#FFFFFF;
+    --almost-white: #F2F1EC;
+    --blue-darker: #2B4451;
+    --blue-darker-active: #182931;
+    --green-darker: #27332F;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--almost-white);
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > a{
+    margin: 1rem;
+
+}
+
+nav div a {
+    margin: 1rem;
+
+    padding-inline: 2rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--blue-darker);
+    color: var(--white);
+}
+
+header h1 {
+    text-align: left;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
