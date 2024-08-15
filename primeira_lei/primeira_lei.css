@@ -4,3 +4,66 @@
     box-sizing: border-box;
     font-family: "Didact Gothic", sans-serif;
 }
+
+:root{
+    --white:#FFFFFF;
+    --almost-white: #F2F1EC;
+    --blue-darker: #294452;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--blue-darker);
+}
+
+nav { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > a{
+    margin: 1rem;
+}
+
+a > img{
+    height: 4rem;
+    width: 100%;
+}
+
+nav div a {
+    margin: 1rem;
+
+    padding-inline: 2rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--white);
+    color: black;
+}
+
+header h1 {
+    color: var(--white);
+    text-align: left;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 5rem;
+    padding-left: 5.5rem;
+}
+
+main{
+    padding: 7rem;
+}
+
+main h2 {
+    color:var(--white)
+}
+
+main p{
+    color: var(--white);
+}
+
+section{
+    padding: 5rem;
+}
