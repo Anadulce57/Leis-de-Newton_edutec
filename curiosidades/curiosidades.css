@@ -26,10 +26,12 @@ nav {
 
 nav > a{
     margin: 1rem;
-    padding-inline: 1rem;
-    padding-block: 0.25rem;
 }
 
+a > img{
+    height: 4rem;
+    width: 100%;
+}
 
 nav div a {
     margin: 1rem;
