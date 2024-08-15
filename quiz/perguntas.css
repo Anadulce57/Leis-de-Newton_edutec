@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+
+}
+
+:root {
+    --white: #F2F1EC;
+    --blue: #289DD2;
+    --dark-blue: #365B6D;
+    --dark-green: #6C9286;
+    --green: #33A881;
+    --red: #EE5454;
+}
+
+header a {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+body {
+    background-color: var(--dark-blue);
+    height: 100vh;
+
+}
+
+main {
+    max-width: 72.5rem;
+    margin-inline: auto;
+    padding: 2rem 1.5rem 0rem 2rem;
+    display: flex;
+    gap: 8.125rem;
+
+}
+section {
+    width: 100%;
+}
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    margin-left: 2rem;
+}
+.pergunta p {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.875rem;
+    margin-bottom: 1.688rem;
+    
+}
+.pergunta h2 {
+    font-size: 2.875rem;
+    line-height: 3.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.alternativas {
+    margin-right: 3rem;
+}
+
+.alternativas form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.alternativas label {
+    display: block;
+    background: var(--dark-green);
+    font-size: 1.375rem;
+    padding: 0.625rem 0.875rem;
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+}
+
+.alternativas label:hover {
+    outline: 0.125rem solid var(--white);
+}
+
+.alternativas label:has(input:checked) {
+    outline: 0.125rem solid var(--blue);
+    & span {
+        background: var(--blue);
+        color: var(--white);
+    }
+}
+
+.alternativas label#correta {
+    background: var(--green);
+}
+.alternativas label#errada {
+    background-color: var(--red);
+}
+
+.alternativas input {
+    display: none;
+}
+
+.alternativas div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.alternativas div p {
+    color: var(--white);
+}
+.alternativas div span {
+    display: block;
+    background: var(--white);
+    border-radius: 0.313rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 2.875rem;
+    height: 2.875rem;
+    font-size: 1.75rem;
+}
+.alternativas a button {
+    font-size: 1.375rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: var(--white);
+    width: 100%;
+    transition: background 0.3s;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.barra {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+.barra a {
+    margin-right: 2rem;
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.barra_progresso {
+    display: flex;
+    background: var(--white);
+    height: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 999px;
+    border: 0.5rem solid var(--dark-green);
+    align-items: center;
+}
+
+.barra_progresso div {
+    height: 1rem;
+    width: 10%;
+    background: var(--dark-blue);
+    border-radius: 999px;
+    margin-left: -0.5rem;
+}

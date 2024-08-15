@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Didact Gothic", sans-serif;
+
 }
 
 :root {
@@ -21,24 +22,27 @@ body {
 
 nav { 
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 nav > a{
     margin: 1rem;
-
 }
 
 nav div a {
     margin: 1rem;
-
     padding-inline: 2rem;
     padding-block: 0.25rem;
     text-decoration: none;
     border-radius: 2rem;
     background: var(--dark-blue);
     color: var(--white);
+}
+
+header {
+    width: 100%;
 }
 
 header h1 {

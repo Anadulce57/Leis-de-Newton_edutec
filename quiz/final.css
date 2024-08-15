@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--white);
+}
+
+:root {
+    --white: #F2F1EC;
+    --blue: #289DD2;
+    --dark-blue: #365B6D;
+    --dark-green: #6C9286;
+    --green: #33A881;
+    --red: #EE5454;
+    --bg-img: url("./images_quiz/confetti.png");
+}
+
+.container {
+    margin-top: 3rem;
+    margin-inline: 7rem;
+    padding: 3rem;
+    padding-inline: 2rem;
+    background: var(--dark-blue);
+    border-radius: 2rem;
+}
+
+body {
+    background: var(--bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+main {
+    text-align: center;
+}
+
+.titulo p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.respostas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 48px;
+    grid-row-gap: 0px;
+
+    margin-inline: 1rem;
+    margin-block: 2rem;
+    line-height: 2rem;
+}
+
+.botoes {
+    padding-block: 3rem;
+}
+
+.botoes a{
+    background: var(--dark-green);
+    border-radius: 2rem;
+    margin-inline: 5.5rem;
+    margin-block: 5rem;
+    padding-inline: 3.25rem;
+    padding-block: 0.75rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
