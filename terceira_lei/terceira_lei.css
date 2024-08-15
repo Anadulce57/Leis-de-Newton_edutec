@@ -8,12 +8,12 @@
 :root{
     --white:#FFFFFF;
     --almost-white: #F2F1EC;
-    --blue-darker: #294452;
+    --green-dark: #536E65;
 }
 
 body{
     height: 100vh;
-    background-color: var(--blue-darker);
+    background-color: var(--green-dark);
 }
 
 nav { 
