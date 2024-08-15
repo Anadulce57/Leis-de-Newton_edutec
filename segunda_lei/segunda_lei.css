@@ -66,4 +66,25 @@ main p{
 
 section{
     padding: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+div {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+img{
+    border-radius: 1rem;
+}
+
+.intro{
+    padding: 1rem;
+}
+
+.fala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
