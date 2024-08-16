@@ -71,11 +71,12 @@ section{
 
 div {
     text-align: center;
-    margin-top: 5rem;
+
 }
 
-img{
+main img{
     border-radius: 1rem;
+    margin-top: 5rem;
     width: 45rem;
     height: 22.5rem;
 }

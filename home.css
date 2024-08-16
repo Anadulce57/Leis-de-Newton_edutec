@@ -11,3 +11,166 @@
     --blue-normal: #365B6D;
     --blue-light: #2A769C;
 }
+
+body {
+    background: var(--almost-white);
+}
+
+.aba { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.aba img {
+    display: block;
+    position: right;
+    margin-left: 3rem;
+
+}
+
+.aba a {
+    margin: 1rem;
+    padding-inline: 2rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--blue-darker);
+    color: var(--white);
+}
+
+.conteudo h1 {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.conteudo img{
+    float: left;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 12rem;
+    margin-right: 18rem;
+    width: 35rem;
+    height: 20rem;
+}
+
+.conteudo h2 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    text-align: right;
+    margin-right: 2rem;
+
+    color: var(--blue-normal);
+}
+
+.conteudo p {
+    text-align: right;
+    margin-bottom: 14rem;
+    margin-right: 2rem;
+    color: var(--blue-normal);
+}
+
+.inicializacao {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.inicializacao a{
+    margin: 1rem;
+    padding-inline: 4rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--blue-darker);
+    color: var(--white);
+}
+
+.home_parte2 {
+    clear:left;
+    background: var(--blue-normal);
+    display: flex;
+    color: var(--almost-white);
+}
+
+.descricao {
+    clear: both;
+    margin-left: 2rem;
+    margin-top: 11rem;
+}
+
+.descricao h2 {
+    font-weight: 700;
+    font-size: 2.75rem;
+    margin-bottom: 4rem;
+}
+
+.descricao p {
+    margin-bottom: 10rem;
+    font-size: 1.25rem;
+}
+
+.descricao a {
+    margin: 1rem;
+    padding-inline: 3rem;
+    padding-block: 0.25rem;
+    margin-bottom: 10rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--almost-white);
+    color: black;
+}
+
+.imagem1 img {
+    float: right;
+    margin-right: 10rem;
+    margin-left: 18rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    border-radius: 1.5rem;
+    width: 25rem;
+    height: 35rem;
+}
+
+.home_parte3 {
+    clear: both;
+}
+
+.imagem2 img{
+    float: left;
+    margin-left: 2rem;
+    margin-right: 16rem;
+    margin-bottom: 14rem;
+    border-radius: 1.5rem;
+    width: 35rem;
+    height: 25rem;
+}
+
+.finalizacao {
+    margin-top: 8rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.finalizacao h2 {
+    font-size: 2.75rem;
+    margin-bottom: 20rem;
+    color: var(--blue-darker);
+}
+
+.finalizacao a {
+    margin: 1rem;
+    padding-inline: 4rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--blue-light);
+    color: var(--almost-white);
+}

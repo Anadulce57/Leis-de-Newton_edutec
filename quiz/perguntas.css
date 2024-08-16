@@ -141,7 +141,7 @@ section {
 .barra {
     display: flex;
     margin: auto;
-    width: 90%;
+    width: 70%;
     align-items: center;
 }
 
@@ -156,7 +156,7 @@ section {
     display: flex;
     background: var(--white);
     height: 1rem;
-    width: 100%;
+    width: 90%;
     padding: 0.5rem;
     border-radius: 999px;
     border: 0.5rem solid var(--dark-green);

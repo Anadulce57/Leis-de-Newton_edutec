@@ -65,6 +65,10 @@ main p{
     color: var(--white);
 }
 
+main img {
+    margin-top: 5rem;
+}
+
 section{
     padding: 5rem;
     margin-bottom: 1.5rem;
@@ -72,11 +76,12 @@ section{
 
 div {
     text-align: center;
-    margin-top: 5rem;
 }
 
 img{
     border-radius: 1rem;
+    width: 30rem;
+    height: 20rem;
 }
 
 .intro{
@@ -88,4 +93,9 @@ img{
     justify-content: center;
     align-items: center;
     gap: 4rem;
+}
+
+.fala img {
+    height: 20rem;
+    width: 50rem;
 }

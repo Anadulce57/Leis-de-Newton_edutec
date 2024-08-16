@@ -8,6 +8,7 @@
 
 :root {
     --white: #F2F1EC;
+    --confetti-white: ##EDEDED;
     --blue: #289DD2;
     --dark-blue: #365B6D;
     --dark-green: #6C9286;
@@ -17,18 +18,19 @@
 }
 
 .container {
-    margin-top: 3rem;
-    margin-inline: 7rem;
+    margin-top: 5rem;
+    margin-inline: 25rem;
     padding: 3rem;
     padding-inline: 2rem;
     background: var(--dark-blue);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 }
 
-body {
+html {
     background: var(--bg-img);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height:100%;
 }
 
 header h1 {

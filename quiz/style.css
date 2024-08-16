@@ -22,13 +22,18 @@ body {
 
 nav { 
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     width: 100%;
 }
 
 nav > a{
     margin: 1rem;
+}
+
+a > img{
+    height: 4rem;
+    width: 100%;
 }
 
 nav div a {
@@ -76,4 +81,5 @@ main a {
     text-decoration: none;
     border-radius: 2rem;
     background: var(--blue);
+    color: black;
 }
