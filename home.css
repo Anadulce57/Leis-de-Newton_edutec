@@ -33,9 +33,19 @@ body {
 
 }
 
-.aba a {
+.ancora{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.ancora a {
     margin: 1rem;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     padding-block: 0.25rem;
     text-decoration: none;
     border-radius: 2rem;
@@ -79,12 +89,12 @@ body {
 
 .inicializacao {
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .inicializacao a{
     margin: 1rem;
-    padding-inline: 4rem;
+    padding-inline: 3rem;
     padding-block: 0.25rem;
     text-decoration: none;
     border-radius: 2rem;
@@ -120,8 +130,6 @@ body {
     margin: 1rem;
     padding-inline: 3rem;
     padding-block: 0.25rem;
-    margin-bottom: 10rem;
-    margin-left: 2rem;
     text-decoration: none;
     border-radius: 2rem;
     background: var(--almost-white);
@@ -161,13 +169,13 @@ body {
 
 .finalizacao h2 {
     font-size: 2.75rem;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
     color: var(--blue-darker);
 }
 
 .finalizacao a {
     margin: 1rem;
-    padding-inline: 4rem;
+    padding-inline: 3rem;
     padding-block: 0.25rem;
     text-decoration: none;
     border-radius: 2rem;
