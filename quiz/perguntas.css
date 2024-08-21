@@ -25,7 +25,8 @@ header a {
 body {
     background-color: var(--dark-blue);
     height: 100vh;
-
+    max-width: max-content;
+    margin-inline: auto;
 }
 
 main {

@@ -17,6 +17,12 @@
     --bg-img: url("./images_quiz/confetti.png");
 }
 
+body{
+    height: 100vh;
+    max-width: max-content;
+    margin-inline: auto;
+}
+
 .container {
     margin-top: 5rem;
     margin-inline: 25rem;

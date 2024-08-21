@@ -15,6 +15,9 @@
 
 body {
     background: var(--almost-white);
+    height: 100vh;
+    max-width: max-content;
+    margin-inline: auto;
 }
 
 nav { 

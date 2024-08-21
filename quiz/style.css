@@ -18,6 +18,8 @@
 body {
     background-color: var(--white);
     height: 100vh;
+    max-width: max-content;
+    margin-inline: auto;
 }
 
 nav { 

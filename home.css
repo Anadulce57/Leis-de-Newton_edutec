@@ -14,6 +14,9 @@
 
 body {
     background: var(--almost-white);
+    max-width: max-content;
+    margin-inline: auto;
+    height: 100vh;
 }
 
 .aba { 
