@@ -14,7 +14,6 @@
 body{
     background-color: var(--blue);
     height: 100vh;
-    max-width: max-content;
     margin-inline: auto;
 }
 
