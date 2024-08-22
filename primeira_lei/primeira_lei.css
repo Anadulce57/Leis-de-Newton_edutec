@@ -49,54 +49,48 @@ header h1 {
     font-family: "Cardo", serif;
     font-weight: 700;
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding-left: 5.5rem;
 }
 
 main{
-    padding: 7rem;
+    padding: 5.5rem;
 }
 
 main h2 {
+    font-size: 3rem;
+    font-weight: 550;
     color:var(--white);
-    padding: 1rem 0;
 }
 
 main p{
     color: var(--white);
+    margin-top: 1rem;
 }
 
 main img {
+    border-radius: 2rem;
     margin-top: 5rem;
-}
-
-section{
-    padding: 5rem;
-    margin-bottom: 1.5rem;
-}
-
-div {
-    text-align: center;
-}
-
-img{
-    border-radius: 1rem;
-    width: 30rem;
+    width: 35.5rem;
     height: 20rem;
 }
 
-.intro{
-    padding: 1rem;
+section{
+    padding: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+div{
+    text-align: center;
 }
 
 .fala {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2.5rem;
 }
 
-.fala img {
-    height: 20rem;
-    width: 50rem;
+.intro{
+    padding: 1rem;
 }

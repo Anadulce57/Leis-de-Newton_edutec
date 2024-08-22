@@ -49,24 +49,27 @@ header h1 {
     font-family: "Cardo", serif;
     font-weight: 700;
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding-left: 5.5rem;
 }
 
 main{
-    padding: 7rem;
+    padding: 5.5rem;
 }
 
 main h2 {
-    color:var(--white)
+    color:var(--white);
+    font-size: 3rem;
+    font-weight: 550;
 }
 
 main p{
     color: var(--white);
+    margin-top: 1rem;
 }
 
 section{
-    padding: 5rem;
+    padding: 4rem;
     margin-bottom: 1.5rem;
 }
 
@@ -77,6 +80,8 @@ div {
 main img{
     border-radius: 1rem;
     margin-top: 5rem;
+    width: 40rem;
+    height: 22.5rem;
 }
 
 .intro{
@@ -87,5 +92,5 @@ main img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 2.5rem;
 }
