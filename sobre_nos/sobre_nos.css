@@ -15,6 +15,8 @@
 
 body {
     background: var(--almost-white);
+    max-width: 1900px;
+    margin-inline: auto;
     height: 100vh;
     margin-inline: auto;
 }

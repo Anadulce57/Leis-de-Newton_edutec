@@ -10,7 +10,7 @@
     --white: #F2F1EC;
     --confetti-white: ##EDEDED;
     --blue: #289DD2;
-    --dark-blue: #365B6D;
+    --dark-blue: #294452;
     --dark-green: #6C9286;
     --green: #33A881;
     --red: #EE5454;
@@ -19,6 +19,7 @@
 
 body{
     height: 100vh;
+    max-width: 1900px;
     margin-inline: auto;
 }
 
