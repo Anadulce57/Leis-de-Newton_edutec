@@ -13,7 +13,8 @@
 }
 
 body {
-    max-width: 1800px;
+    background-color: var(--almost-white");
+    max-width: 1900px;
     margin-inline: auto;
 }
 
