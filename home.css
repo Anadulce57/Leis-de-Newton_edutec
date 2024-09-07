@@ -13,9 +13,9 @@
 }
 
 body {
-    background-color: var(--almost-white");
     max-width: 1900px;
     margin-inline: auto;
+    background-color: var(--almost-white);
 }
 
 .home_parte1{
