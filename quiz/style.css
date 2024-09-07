@@ -17,8 +17,7 @@
 
 body {
     background-color: var(--white);
-    height: 100vh;
-    max-width: 1900px;
+    max-width: 1800px;
     margin-inline: auto;
 }
 

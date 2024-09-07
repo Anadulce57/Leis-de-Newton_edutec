@@ -13,9 +13,7 @@
 
 body{
     background-color: var(--green-dark);
-    max-width: 1900px;
-    margin-inline: auto;
-    height: 100vh;
+    max-width: 1800px;
     margin-inline: auto;
 }
 
