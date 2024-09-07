@@ -13,9 +13,12 @@
 }
 
 body {
-    background: var(--almost-white);
-    max-width: 2500px;
+    max-width: 1750px;
     margin-inline: auto;
+}
+
+.home_parte1{
+    background: var(--almost-white);
 }
 
 .aba { 
