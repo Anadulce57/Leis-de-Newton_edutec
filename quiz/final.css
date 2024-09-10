@@ -18,13 +18,14 @@
 }
 
 body{
-    max-width: 1900px;
+    max-width: 1450px;
     margin-inline: auto;
 }
 
 .container {
     margin-top: 5rem;
     margin-inline: 25rem;
+    writing-mode: horizontal-tb;
     padding: 3rem;
     padding-inline: 2rem;
     background: var(--dark-blue);
@@ -76,6 +77,8 @@ main {
 
 .botoes {
     padding-block: 3rem;
+    margin: 1rem;
+    padding-inline: 3rem;
 }
 
 .botoes a{
@@ -83,7 +86,8 @@ main {
     border-radius: 2rem;
     margin-inline: 5.5rem;
     margin-block: 5rem;
-    padding-inline: 3.25rem;
+    margin: 1rem;
+    padding-inline: 3rem;
     padding-block: 0.75rem;
     text-decoration: none;
     font-size: 1rem;
