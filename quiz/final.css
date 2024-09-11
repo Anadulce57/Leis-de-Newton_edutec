@@ -81,7 +81,7 @@ main {
     padding-inline: 3rem;
 }
 
-.botoes a{
+.botoes a, button{
     background: var(--dark-green);
     border-radius: 2rem;
     margin-inline: 5.5rem;
@@ -91,4 +91,5 @@ main {
     padding-block: 0.75rem;
     text-decoration: none;
     font-size: 1rem;
+    border: none;
 }

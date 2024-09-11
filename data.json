@@ -1,0 +1,89 @@
+{
+    "quizzes": [
+        {
+            "title": "HTML",
+            "questions": [
+                {
+                    "question": "Qual é o nome da primeira lei de Newton?",
+                    "options": [
+                        "Lei da inércia",
+                        "Lei da gravitação",
+                        "Lei da ação e reação",
+                        "Lei da velocidade constante"
+                    ],
+                    "answer": "Lei da inércia"
+                },
+                {
+                    "question": "Qual é o objeto físico que a primeira lei de Newton descreve?",
+                    "options": [
+                        "O movimento de um corpo em queda livre",
+                        "O comportamento de um corpo em equilíbrio",
+                        "A aceleração de um objeto em movimento circular",
+                        "A ação de uma força em um objeto em movimento uniforme"
+                    ],
+                    "answer": "O comportamento de um corpo em equilíbrio"
+                },
+                {
+                    "question": "Como a segunda lei de Newton é matematicamente expressa?",
+                    "options": [
+                        "F = m * a",
+                        "F = m / a",
+                        "F = m + a",
+                        "F = m - a"
+                    ],
+                    "answer": "F = m * a"
+                },
+                {
+                    "question": "Qual das seguintes situações melhor exemplifica a terceira lei de Newton?",
+                    "options": [
+                        "Um carro acelerando em uma estrada reta",
+                        "Um astronauta flutuando no espaço",
+                        "Um pássaro voando no ar",
+                        "Um barco navegando em um lago calmo"
+                    ],
+                    "answer": "Um barco navegando em um lago calmo"
+                },
+                {
+                    "question": "De acordo com a terceira lei de Newton, qual é a relação entre as forças de ação e reação?",
+                    "options": [
+                        "Elas são de mesma magnitude, mas em direções opostas",
+                        "Elas têm magnitudes e direções diferentes",
+                        "A força de ação é sempre maior que a de reação",
+                        "A força de reação é sempre maior que a de ação"
+                    ],
+                    "answer": "Elas são de mesma magnitude, mas em direções opostas"
+                },
+                {
+                    "question": "Um carro está parado em um semáforo. Quando o sinal fica verde, o motorista pisa no acelerador. Qual lei de Newton está sendo apresentada?",
+                    "options": [
+                        "Primeira Lei de Newton",
+                        "Segunda Lei de Newton",
+                        "Terceira Lei de Newton",
+                        "Nenhuma das alternativas"
+                    ],
+                    "answer": "Segunda Lei de Newton"
+                },
+                {
+                    "question": "Quando você pula da borda de uma piscina, você sente a água empurrando você para cima. Esse exemplo apresenta a ",
+                    "options": [
+                        "Primeira Lei de Newton",
+                        "Segunda Lei de Newton",
+                        "Terceira Lei de Newton",
+                        "Nenhuma das alternativas"
+                    ],
+                    "answer": "Terceira Lei de Newton"
+                },
+                {
+                    "question": " Um veículo segue em uma estrada horizontal e retilínea e o seu velocímetro registra um valor constante. Assinale a alternativa correta ",
+                    "options": [
+                        "Aceleração vira nula",
+                        "A força tem o mesmo sentido da velocidade",
+                        "As forças no veiculos não são nulas",
+                        "A força vira negativa"
+                    ],
+                    "answer": "Aceleração vira nula"
+                }
+            ]
+        } 
+    ]
+}
