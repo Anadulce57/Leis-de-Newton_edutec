@@ -19,6 +19,8 @@ body {
 }
 
 .home_parte1{
+    max-width: 1900px;
+    margin-inline: auto;
     background: var(--almost-white);
 }
 
@@ -110,6 +112,8 @@ body {
 }
 
 .home_parte2 {
+    max-width: 1900px;
+    margin-inline: auto;
     clear:left;
     background: var(--blue-normal);
     display: flex;
@@ -155,6 +159,8 @@ body {
 }
 
 .home_parte3 {
+    max-width: 1900px;
+    margin-inline: auto;
     clear: both;
 }
 
