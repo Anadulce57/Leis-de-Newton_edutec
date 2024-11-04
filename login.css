@@ -29,13 +29,18 @@ header {
     height: 8.375rem;
 
     display: flex;
-    justify-content: right;
-    align-items: right;
+    /* justify-content: right;
+    align-items: right; */
 }
 
 main {
     padding-inline: 1.5rem;
-    display: right;
+    /* display: right; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10rem;
+    grid-row-gap: 0px;
 }
 
 .descricao {
@@ -127,8 +132,8 @@ main {
     font-weight: 700;
     font-size: 1rem;
 }
-.bg-dasktop {
-    display: none;
+.bg-desktop {
+    display: block;
 }
 
 @media(min-width: 1000px) {
@@ -181,3 +186,11 @@ main {
     }
     
 }
+
+/* 
+.bg{
+    background-image: url(./imagens_cadastro/pg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/

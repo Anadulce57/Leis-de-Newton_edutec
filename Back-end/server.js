@@ -43,6 +43,43 @@ app.post('/api/login', (req, res) =>{
     });
 })
 
+app.post('/api/register-user', (req, res) =>{
+    const {name, email, password, password_confirmation} = req.body;
+
+    // Validar se todos os campos foram preenchidos. Se não, recusar o cadastro.
+
+    // Validar se senha (password) e confirmação de senha (password_confirmation)
+    // são iguais. Se não, informar o usuário
+
+    // Se as validações acima passarem, INSERIR no banco de dados
+
+
+    con.query('SELECT * FROM usuario WHERE email = ?', [email], (err, rows)=>{
+        if(err) res.status(401).send('Usuário ou Senha inválidos');
+
+        if(password == rows[0].senha){
+            res.status(201).send('Autenticado');
+            return;
+        }
+
+        res.status(401).send('Usuário ou Senha inválidos');
+    });
+})
+
+app.get('/api/profile/:id_usuario', (req, res) => {
+    const {id_usuario} = req.params;
+    con.query('SELECT * FROM usuario WHERE id_usuario = ?', [id_usuario], (err, rows)=>{
+        if(err) res.status(401).send('Usuário ou Senha inválidos');
+
+        if(rows.length == 0){
+            res.status(404).send('Usuário não encontrado');
+            return;
+        }
+
+        res.status(200).send(rows[0]);
+    });
+});
+
 app.listen(5000, () =>{
     console.log('Servidor em execução!');
 });
