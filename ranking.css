@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'outfit', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --gray-800: #203741;
+    --gray-600: #555453;
+    --gray-400:#94A3B8;
+    --gray-200: #e2e8f0;
+    --light-purple:#389DD0;
+    --purple: #365B6D;
+    --white: #F2F1EC;
+}
+
+
+ body {
+    background-image: url(./imagens/pg-desktop.png);
+    
+ }
