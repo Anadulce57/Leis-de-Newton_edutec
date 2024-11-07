@@ -43,11 +43,11 @@ app.post('/api/login', (req, res) =>{
     });
 })
 
-app.post('/api/register-user', (req, res) =>{
+app.post('/api/register', (req, res) =>{
     const {name, email, password, password_confirmation} = req.body;
-
+    
     // Validar se todos os campos foram preenchidos. Se não, recusar o cadastro.
-
+    
     // Validar se senha (password) e confirmação de senha (password_confirmation)
     // são iguais. Se não, informar o usuário
 
