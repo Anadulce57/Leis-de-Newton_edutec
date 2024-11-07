@@ -28,6 +28,9 @@ con.connect((err) => {
     console.log('Connection established!')
 })
 
+app.use(cors()) //acesso ao front-end
+app.use(express.json()) // receber informações do frontend
+
 /** Cria uma função do tipo POST para a rota '/api/login' */
 app.post('/api/login', (req, res) =>{
     const {email, password} = req.body;
@@ -45,7 +48,7 @@ app.post('/api/login', (req, res) =>{
 
 app.post('/api/register', (req, res) =>{
     const {name, email, password, password_confirmation} = req.body;
-    
+
     // Validar se todos os campos foram preenchidos. Se não, recusar o cadastro.
     
     // Validar se senha (password) e confirmação de senha (password_confirmation)
