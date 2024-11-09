@@ -13,11 +13,59 @@
     --light-purple:#389DD0;
     --purple: #365B6D;
     --white: #F2F1EC;
+    --bg-desktop: url(./imagem.ranking/desktop_img.jpg);
 }
 
 
  body {
-    background-image: url(./imagem.ranking/imagem do desktop.jpg);
+    height: 100svh;
+    background-image: url(./imagem.ranking/desktop_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
+ header{
+    background-color: var(--gray-200);
+    padding: 0rem;
+
+ }
+
+ nav { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > a{
+    margin: 1rem;
+}
+
+a > img{
+    height: 4rem;
+    width: 100%;
+}
+
+nav div a {
+    margin: 1rem;
+
+    padding-inline: 2rem;
+    padding-block: 0.25rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background: var(--gray-800);
+    color: var(--white);
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 5rem;
+    color: var(--gray-200);
+
+}
+
+
+h2 {
+    font-size: 2rem;
+
+}
 

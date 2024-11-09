@@ -1,3 +1,4 @@
+
 /* Importa as dependências */
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -10,6 +11,7 @@ const app = express();
 // middlewares
 app.use( bodyParser.json() );
 app.use(cors());
+app.use(express.json()) // receber informações do frontend
 
 /*Cria conexão com banco de dados */
 const con = mysql.createConnection({
@@ -17,7 +19,7 @@ const con = mysql.createConnection({
     user: 'sql10741352', // Um usuário do banco. Ex: user 
     password: 'C2DBZpI9aM', // A senha do usuário. Ex: user123
     database: 'sql10741352', // A base de dados a qual a aplicação irá se conectar, deve ser a mesma onde foi executado o Código 1. Ex: node_mysql
-    port: 3306
+    port: 5000
 });
 
 con.connect((err) => {
@@ -27,9 +29,6 @@ con.connect((err) => {
     }
     console.log('Connection established!')
 })
-
-app.use(cors()) //acesso ao front-end
-app.use(express.json()) // receber informações do frontend
 
 /** Cria uma função do tipo POST para a rota '/api/login' */
 app.post('/api/login', (req, res) =>{
@@ -47,26 +46,12 @@ app.post('/api/login', (req, res) =>{
 })
 
 app.post('/api/register', (req, res) =>{
-    const {name, email, password, password_confirmation} = req.body;
-
-    // Validar se todos os campos foram preenchidos. Se não, recusar o cadastro.
+    const {userName, userEmail, userPassword, passwordConfirmation} = req.body;
     
-    // Validar se senha (password) e confirmação de senha (password_confirmation)
-    // são iguais. Se não, informar o usuário
+}); 
 
-    // Se as validações acima passarem, INSERIR no banco de dados
-
-
-    con.query('SELECT * FROM usuario WHERE email = ?', [email], (err, rows)=>{
-        if(err) res.status(401).send('Usuário ou Senha inválidos');
-
-        if(password == rows[0].senha){
-            res.status(201).send('Autenticado');
-            return;
-        }
-
-        res.status(401).send('Usuário ou Senha inválidos');
-    });
+app.get("/", (request, response) => {
+    response.json({message: "Hello World!"})
 })
 
 app.get('/api/profile/:id_usuario', (req, res) => {
