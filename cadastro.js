@@ -1,8 +1,8 @@
 
 async function register() {
-    const userName = docuument.querySelector('#nome').value
-    const userEmail = docuument.querySelector('#email').value
-    const userPassword = docuument.querySelector('#senha').value
+    const userName = document.querySelector('#nome').value
+    const userEmail = document.querySelector('#email').value
+    const userPassword = document.querySelector('#senha').value
     const passwordConfirmation = document.querySelector('#senhaConfirmada').value
 
     if (userName == "" || userEmail == "" || userPassword == "" || passwordConfirmation == ""){

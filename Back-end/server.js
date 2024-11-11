@@ -47,12 +47,10 @@ app.post('/api/login', (req, res) =>{
 
 app.post('/api/register', (req, res) =>{
     const {userName, userEmail, userPassword, passwordConfirmation} = req.body;
-    
+    console.log(express.request.body)
 }); 
 
-app.get("/", (request, response) => {
-    response.json({message: "Hello World!"})
-})
+
 
 app.get('/api/profile/:id_usuario', (req, res) => {
     const {id_usuario} = req.params;
