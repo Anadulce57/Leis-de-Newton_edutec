@@ -19,7 +19,7 @@ const con = mysql.createConnection({
     user: 'sql10741352', // Um usuário do banco. Ex: user 
     password: 'C2DBZpI9aM', // A senha do usuário. Ex: user123
     database: 'sql10741352', // A base de dados a qual a aplicação irá se conectar, deve ser a mesma onde foi executado o Código 1. Ex: node_mysql
-    port: 5000
+    port: 5000,
 });
 
 con.connect((err) => {
@@ -28,6 +28,14 @@ con.connect((err) => {
         return
     }
     console.log('Connection established!')
+})
+/* Cria uma função do tipo post para a rota '/api/register' */
+app.post('/api/register', (req, res) =>{
+    const {userName, userEmail, userPassword, passwordConfirmation} = req.body;
+}); 
+
+app.get("/", (request, response) => {
+    response.json({message:"Hello World!"})
 })
 
 /** Cria uma função do tipo POST para a rota '/api/login' */
@@ -44,13 +52,6 @@ app.post('/api/login', (req, res) =>{
         res.status(401).send('Usuário ou Senha inválidos');
     });
 })
-
-app.post('/api/register', (req, res) =>{
-    const {userName, userEmail, userPassword, passwordConfirmation} = req.body;
-    console.log(express.request.body)
-}); 
-
-
 
 app.get('/api/profile/:id_usuario', (req, res) => {
     const {id_usuario} = req.params;

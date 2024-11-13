@@ -66,8 +66,8 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    padding: 3rem;
-    margi
-
+    padding-left: 3rem;
+    color: var(--white);
+    margin-bottom: 2rem;
 }
 
