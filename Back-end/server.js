@@ -19,7 +19,7 @@ const con = mysql.createConnection({
     user: 'sql10741352', // Um usuário do banco. Ex: user 
     password: 'C2DBZpI9aM', // A senha do usuário. Ex: user123
     database: 'sql10741352', // A base de dados a qual a aplicação irá se conectar, deve ser a mesma onde foi executado o Código 1. Ex: node_mysql
-    port: 5000,
+    port: 5500,
 });
 
 con.connect((err) => {
@@ -31,7 +31,9 @@ con.connect((err) => {
 })
 /* Cria uma função do tipo post para a rota '/api/register' */
 app.post('/api/register', (req, res) =>{
-    const {userName, userEmail, userPassword, passwordConfirmation} = req.body;
+    const user = request.body.user
+
+    console.log(user)
 }); 
 
 app.get("/", (request, response) => {
@@ -67,6 +69,6 @@ app.get('/api/profile/:id_usuario', (req, res) => {
     });
 });
 
-app.listen(5000, () =>{
-    console.log('Servidor em execução!');
+app.listen(5500, () =>{
+    console.log('Servidor em execução na porta 5500!');
 });
