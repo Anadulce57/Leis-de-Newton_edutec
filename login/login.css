@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url(./imagens/pg-desktop.png);
+    background-image: url(../imagens/pg-desktop.png);
     background-size: cover;
     height: 8.375rem;
 

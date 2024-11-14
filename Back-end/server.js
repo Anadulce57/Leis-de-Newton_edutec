@@ -9,6 +9,8 @@ const jwt = require("jsonwebtoken")
 /* Cria o servidor WEB */
 const app = express();
 
+const { SECRET_KEY } = process.env
+
 // middlewares
 app.use( bodyParser.json() );
 app.use(cors());
@@ -19,6 +21,7 @@ app.post('/api/register', (req, res) =>{
     const user = req.body.user
 
     console.log(user)
+    
 }); 
 
 app.post("/login", (request, response) => {
@@ -41,8 +44,15 @@ app.post("/login", (request, response) => {
         }
 
         if(user.password === data[0].password) {
-            
+            const email = user.email
+            const id = data[0].id
+
+            const token = jwt.sign({ id, email }, SECRET_KEY, { expiresIn: "1h" })
+            response.json({ token, ok: true })
+            return
         }
+
+        response.json({ message: "Credenciais inválidas! Tente novamente" })
     })
 })
 

@@ -23,7 +23,7 @@ async function login() {
     if(response.ok) {
         console.log(response.token)
         localStorage.setItem(("token", response.token))
-        window.location.href = "./home.html"
+        window.location.href = "../index.html"
         return
     }
 
@@ -43,9 +43,12 @@ button.addEventListener("click", (event) => {
 
 
 
-function verifyToken(){
+/* function verifyToken(){
     const token = localStorage.getItem("token")
 
+    if(!token) {
+        window.location.href = "./login/login.html"
+    }
 }
 
-verifyToken()
+verifyToken() */
