@@ -23,6 +23,14 @@ async function register() {
 
     }
 
+    await fetch("http://localhost:5500/register", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({user})
+    }) 
     //enviar o objeto user para o back-end
 }
 
