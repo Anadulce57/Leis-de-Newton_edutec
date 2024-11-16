@@ -26,8 +26,35 @@ const db = mysql.createPool({
 app.post('/api/register', (req, res) =>{
     const user = req.body.user
 
-    console.log(user)
-    
+    const searchCommand = `
+        SELECT * FROM Users
+        WHERE email = ?
+    `
+    db.query(searchCommand, [user.email], (error, data) => {
+        if(error){
+            console.log(error)
+            return
+        }
+
+        if(data.length !== 0){
+            response.json({message: "Já existe um usuário cadastrado com esse e-mail. Tente outro e-mail", userExists: true})
+            return
+        }
+
+        const insertComand = `
+             INSERT INTO Users(name, email, password)
+             VALUES(?, ?, ?)
+        `
+
+        db.query(insertComand, [user.name, user.email, user.password], (error) => {
+            if(error){
+                console.log(error)
+                return
+            }
+
+            response.json({message: "Usuário cadastrado com sucesso!"})
+        })
+    })
 }); 
 
 app.post("/login", (request, response) => {
