@@ -16,6 +16,15 @@ app.use( bodyParser.json() );
 app.use(cors());
 app.use(express.json()) // receber informações do frontend
 
+//Cria conexão com banco de dados 
+const db = mysql.createPool({
+    connectionLimit: 10, // Essa linha pra baixo dados do mysql
+    host: "sql10.freesqldatabase.com",
+    database:"sql10744660",
+    user: "sql10744660" ,
+    password: "37B5iMEzu4" 
+})
+
 /* Cria uma função do tipo post para a rota '/api/register' */
 app.post('/api/register', (req, res) =>{
     const user = req.body.user
