@@ -23,15 +23,23 @@ async function register() {
 
     }
 
-    await fetch("https://3000-anadulce57-leisdenewton-4lz9f1sa346.ws-us116.gitpod.io/api/register", {
+    const response = await fetch("https://3000-anadulce57-leisdenewton-4lz9f1sa346.ws-us116.gitpod.io/api/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
 
         body: JSON.stringify({user})
-    }) 
-    //enviar o objeto user para o back-end
+    }).then(response => response.json())
+
+    alert(response.message)
+
+    if(response.userExist) {
+        window.location.reload()
+        return
+    }
+
+    window.location.href = "../login/login.html"
 }
 
 const button = document.querySelector("form button")
