@@ -23,7 +23,7 @@ const db = mysql.createPool({
     password: DB_PASSWORD 
 })
 
-app.post('/api/register', (req, res) =>{
+app.post('/api/register', (req, response) =>{
     const user = req.body.user
 
     const searchCommand = `
