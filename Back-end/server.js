@@ -26,11 +26,13 @@ const db = mysql.createPool({
 app.post('/api/register', (req, response) =>{
     const user = req.body.user
 
+    console.log(user)
+
     const searchCommand = `
         SELECT * FROM Users
         WHERE email = ?
     `
-    db.query(searchCommand, [user.email], (error, data) => {
+    db.query(searchCommand, [user.userEmail], (error, data) => {
         if(error){
             console.log(error)
             return
@@ -46,7 +48,7 @@ app.post('/api/register', (req, response) =>{
              VALUES(?, ?, ?)
         `
 
-        db.query(insertComand, [user.name, user.email, user.password], (error) => {
+        db.query(insertComand, [user.userName, user.userEmail, user.userPassword], (error) => {
             if(error){
                 console.log(error)
                 return
