@@ -59,6 +59,10 @@ app.post('/api/register', (req, response) =>{
     })
 }); 
 
+app.post('/api/score', (req, response) => {
+    
+})
+
 app.listen(3000, () =>{
     console.log('Servidor em execução na porta 3000!');
 });

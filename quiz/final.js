@@ -4,11 +4,13 @@ import { verificarTema, trocarTema } from "../../helpers/tema-helper.js";
 const body = document.querySelector("body")
 const assunto = localStorage.getItem("assunto")
 const botaoJogarNovamente = document.querySelector(".botoes button")
-
+const botaoSalve = document.querySelector(".botoes #salve")
 
 
 botaoJogarNovamente.addEventListener("click", jogarNovamente)
-
+botaoSalve.addEventListener("click", () => {
+    
+})
 
 function inserirResultado() {
     const sectionPontuacao = document.querySelector(".titulo")
