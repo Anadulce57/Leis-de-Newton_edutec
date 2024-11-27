@@ -18,7 +18,7 @@ async function login() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ user })
-    }).then(response => response,json())
+    }).then(response => response.json())
 
     if(response.ok) {
         console.log(response.token)

@@ -6,10 +6,20 @@ const assunto = localStorage.getItem("assunto")
 const botaoJogarNovamente = document.querySelector(".botoes button")
 const botaoSalve = document.querySelector(".botoes #salve")
 
+const post = await fetch("https://3000-anadulce57-leisdenewton-4lz9f1sa346.ws-us116.gitpod.io/api/score", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify({user})
+}).then(response => response.json())
+
 
 botaoJogarNovamente.addEventListener("click", jogarNovamente)
 botaoSalve.addEventListener("click", () => {
-    
+    post()
+    response.json({message: "Salvo com sucesso!"})
 })
 
 function inserirResultado() {

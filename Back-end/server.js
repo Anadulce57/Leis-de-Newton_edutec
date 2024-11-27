@@ -103,8 +103,33 @@ app.get("/verify", (request, response) => {
     })
 })
 
-app.post('/api/score', (req, response) => {
-    
+app.post('/api/score', (request, response) => {
+    const user = req.body.user
+
+    console.log(user)
+
+    const insertComand = `
+             INSERT INTO Score(score)
+             VALUES(?)
+    `
+    db.query(insertComand, [user.userScore], (error) => {
+        if(error){
+            console.log(error)
+            return
+        }
+
+        response.json({message: "Algo deu errado!"})
+    })
+        
+});
+
+app.post('api/ranking', (request, response) => {
+    const searchCommand = `
+    SELECT * FROM Score
+    WHERE score = ?
+   `
+
+   db.query(searchCommand, [user.email])
 })
 
 app.listen(3000, () =>{
