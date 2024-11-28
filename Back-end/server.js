@@ -109,8 +109,8 @@ app.post('/api/score', (request, response) => {
     console.log(user)
 
     const insertComand = `
-             INSERT INTO Score(score)
-             VALUES(?)
+        INSERT INTO Score(score)
+        VALUES(?)
     `
     db.query(insertComand, [user.userScore], (error) => {
         if(error){
@@ -118,7 +118,7 @@ app.post('/api/score', (request, response) => {
             return
         }
 
-        response.json({message: "Algo deu errado!"})
+        response.json({message: "Salvo com sucesso!"})
     })
         
 });
@@ -127,6 +127,8 @@ app.post('api/ranking', (request, response) => {
     const searchCommand = `
     SELECT * FROM Score
     WHERE score = ?
+    ORDER BY score DESC
+    LIMIT 5
    `
 
    db.query(searchCommand, [user.email])
