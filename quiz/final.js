@@ -6,26 +6,31 @@ const assunto = localStorage.getItem("assunto")
 const botaoJogarNovamente = document.querySelector(".botoes button")
 const botaoSalve = document.querySelector(".botoes #salve")
 
-const post = await fetch("https://3000-anadulce57-leisdenewton-4lz9f1sa346.ws-us116.gitpod.io/api/score", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
+const token = localStorage.getItem("token")
+const pontos = localStorage.getItem("points")
 
-    body: JSON.stringify({user})
-}).then(response => response.json())
+async function post() {
+
+    const post = await fetch("https://3000-anadulce57-leisdenewton-ymjir8fiilv.ws-us117.gitpod.io/api/score", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": token
+        },
+        body: JSON.stringify({ pontos })
+    }).then(response => response.json())
+}
 
 
 botaoJogarNovamente.addEventListener("click", jogarNovamente)
 botaoSalve.addEventListener("click", () => {
     post()
-    response.json({message: "Salvo com sucesso!"})
 })
 
 function inserirResultado() {
     const sectionPontuacao = document.querySelector(".titulo")
     const divAssunto = document.querySelector(".assunto")
-    const pontos = localStorage.getItem("points")
+    
 
     sectionPontuacao.innerHTML = `
                 <h1>Parabéns!</h1>

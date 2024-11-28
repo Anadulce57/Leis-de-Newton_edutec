@@ -104,15 +104,18 @@ app.get("/verify", (request, response) => {
 })
 
 app.post('/api/score', (request, response) => {
-    const user = req.body.user
+    const pontos = request.body.pontos
+    const token = request.headers.authorization
 
-    console.log(user)
+    console.log(pontos)
 
     const insertComand = `
-        INSERT INTO Score(score)
-        VALUES(?)
+        INSERT INTO Score(score, name)
+        VALUES(?, ?)
     `
-    db.query(insertComand, [user.userScore], (error) => {
+    const decode = jwt.verify(token, SECRET_KEY)
+
+    db.query(insertComand, [pontos, decode.email], (error) => {
         if(error){
             console.log(error)
             return

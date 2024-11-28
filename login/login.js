@@ -12,7 +12,7 @@ async function login() {
         password
     }
 
-    const response = await fetch("https://localhost:3000/login", {
+    const response = await fetch("https://3000-anadulce57-leisdenewton-ymjir8fiilv.ws-us117.gitpod.io/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -22,7 +22,7 @@ async function login() {
 
     if(response.ok) {
         console.log(response.token)
-        localStorage.setItem(("token", response.token))
+        localStorage.setItem("token", response.token)
         window.location.href = "../index.html"
         return
     }

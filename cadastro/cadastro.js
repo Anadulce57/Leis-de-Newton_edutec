@@ -23,7 +23,7 @@ async function register() {
 
     }
 
-    const response = await fetch("https://3000-anadulce57-leisdenewton-4lz9f1sa346.ws-us116.gitpod.io/api/register", {
+    const response = await fetch("https://3000-anadulce57-leisdenewton-ymjir8fiilv.ws-us117.gitpod.io/api/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
